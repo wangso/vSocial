@@ -1,6 +1,6 @@
 Entities.addEntity({
 	position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-	"script": "http://mpassets.highfidelity.com/a250c5bc-1ee1-4c34-a1d0-7a6acbcaa989-v1/paddle_drop_converted.wav",
+	"script": "https://raw.githubusercontent.com/acstarr/vSocial/master/SpawnPaddle.js",
 	type: "paddle",
 	color: { red: 255, green: 255, blue: 255 },
 	dimensions: { x: .5, y: .1, z: .1 },
