@@ -1,0 +1,37 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "created": "2017-06-01T18:23:33Z",
+            "dimensions": {
+                "x": 0.12408290803432465,
+                "y": 0.20766168832778931,
+                "z": 0.12651576101779938
+            },
+            "id": "{66bd3c32-e5e2-4d1c-a5bb-2adc8d9589d6}",
+            "lastEdited": 1496420987844181,
+            "lastEditedBy": "{aea85f3c-44fe-4d00-9334-c7138d11a45a}",
+            "locked": 1,
+            "modelURL": "http://mpassets.highfidelity.com/53f930fb-a433-4ccf-8974-2c53a631e40e-v1/handScannerSwitch_tall_VR.fbx",
+            "name": "Whiteboard - Swiper",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 0.27299484610557556,
+                "x": -0.13649742305278778,
+                "y": -0.13649742305278778,
+                "z": -0.13649742305278778
+            },
+            "rotation": {
+                "w": 0.70701593160629272,
+                "x": -6.3205161495716311e-06,
+                "y": -0.70722067356109619,
+                "z": -1.5255761354637798e-05
+            },
+            "script": "http://mpassets.highfidelity.com/53f930fb-a433-4ccf-8974-2c53a631e40e-v1/swiper.js",
+            "scriptTimestamp": 1485286334360,
+            "shapeType": "simple-hull",
+            "type": "Model"
+        }
+    ],
+    "Version": 70
+}

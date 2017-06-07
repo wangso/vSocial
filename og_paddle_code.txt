@@ -1,0 +1,5 @@
+{
+  "grabbableKey": {
+    "wantsTrigger": true
+  }
+}
