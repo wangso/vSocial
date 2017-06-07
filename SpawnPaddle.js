@@ -65,7 +65,7 @@ var id = Entities.addEntity({
                 y: 0.83144032955169678,
                 z: -1.9468663595034741e-05
             },
-            script: "http://mpassets.highfidelity.com/a250c5bc-1ee1-4c34-a1d0-7a6acbcaa989-v1/itemSpawner.js",
+            script: "https://raw.githubusercontent.com/acstarr/vSocial/master/SpawnPaddle.js",
             shapeType: "simple-compound",
             type: "Model",
             "userData": "{\n  \"grabbableKey\: {\n    \"wantsTrigger\: true,\n    \"grabbable\: false,\n    \"cloneLifetime\: 300,\n    \"cloneLimit\: 0,\n    \"cloneDynamic\: false,\n    \"cloneable\: true\n  },\n  \"originalPosition\: {\n    \"x\: 39.68617248535156,\n    \"y\: -200.48626708984375,\n    \"z\: 31.1165771484375\n  },\n  \"originalRotation\: {\n    \"x\: 0.06160598620772362,\n    \"y\: -0.7044286727905273,\n    \"z\: 0.06160786375403404,\n    \"w\: 0.7044072151184082\n  },\n  \"wearable\: {\n    \"joints\: {\n      \"RightHand\: [\n        {\n          \"x\: 0.001,\n          \"y\: 0.139,\n          \"z\: 0.05\n        },\n        {\n          \"x\: -0.73,\n          \"y\: -0.043,\n          \"z\: -0.108,\n          \"w\: -0.666\n        }\n      ],\n      \"LeftHand\: [\n        {\n          \"x\: 0.007,\n          \"y\: 0.151,\n          \"z\: 0.061\n        },\n        {\n          \"x\: -0.417,\n          \"y\: 0.631,\n          \"z\: -0.389,\n          \"w\: -0.525\n        }\n      ]\n    }\n  }\n}"
