@@ -22,7 +22,7 @@
   }
    this.spawnItem = function () 
   {
-   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData"]);
+   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData",]);
  print(properties);
   properties[userData]={"wearable":{
     "joints": {
@@ -68,7 +68,7 @@
   {
    x: 0, y: 0.1, z: 0 
 }
-, gravity: properties.gravity, restitution: properties.restitution, lifetime: ITEM_LIFETIME, collisionsWillMove: 1, dynamic: 1, density: 100, collisionSoundURL: properties.collisionSoundURL, 
+, gravity: properties.gravity, restitution: properties.restitution, lifetime: ITEM_LIFETIME, collisionsWillMove: 1, dynamic: 1, density: 100, collisionSoundURL: properties.collisionSoundURL, userData: properties.userData, 
 }
 );
   
