@@ -22,10 +22,14 @@
   }
    this.spawnItem = function () 
   {
-   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData"]);
-  properties["userData"]={
-    "hifiHomeKey":{"reset":true},
-    "grabbableKey":{"grabbable":true},
+   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", ]);
+  properties["userData"]=JSON.stringify({
+    "hifiHomeKey":{
+      "reset": true
+    },
+    "grabbableKey":{
+      "grabbable": true
+    },
     "wearable":{
       "joints": {
         "RightHand": [
@@ -54,7 +58,7 @@
             "w": -0.525
           }
         ]
-  }}};
+  }}});
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
   {
