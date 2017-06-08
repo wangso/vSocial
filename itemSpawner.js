@@ -23,7 +23,7 @@
    this.spawnItem = function () 
   {
    var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData"]);
- console.log(properties);
+ print(properties);
   properties[userData]={"wearable":{
     "joints": {
       "RightHand": [
@@ -53,7 +53,7 @@
         }
       ]
     }}};
-  console.log(properties);
+ print(properties);
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
   {
