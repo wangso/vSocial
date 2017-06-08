@@ -4,6 +4,7 @@
 // Created by Clement Brisset on 11/16/2016. 
 // Copyright 2015 High Fidelity, Inc. //
 // This script spawns items for the ping pong table 
+// modified by Adam Starr on 06/08/2017 to make the spawned paddles wearable
 //
 // Distributed under the Apache License, Version 2.0. 
 // See the accompanying file LICENSE or http:
