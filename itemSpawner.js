@@ -51,7 +51,7 @@
           "w": -0.525
         }
       ]
-    };
+    }};
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
   {
