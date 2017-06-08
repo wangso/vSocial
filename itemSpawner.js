@@ -22,7 +22,7 @@
   }
    this.spawnItem = function () 
   {
-   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", ]);
+   var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData",]);
 //  properties["userData"]={"wearable":{
 //    "joints": {
 //      "RightHand": [
