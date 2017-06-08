@@ -13,8 +13,8 @@
  (function () 
  	{
  	 var ITEM_LIFETIME = 2300;
-  //
- 30 min. var itemID;
+  // 30 min. 
+  var itemID;
   this.preload = function(entityID) 
   {
    itemID = entityID;
