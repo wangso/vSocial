@@ -23,35 +23,38 @@
    this.spawnItem = function () 
   {
    var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData"]);
-  properties["userData"]={"wearable":{
-    "joints": {
-      "RightHand": [
-        {
-          "x": 0.001,
-          "y": 0.139,
-          "z": 0.05
-        },
-        {
-          "x": -0.73,
-          "y": -0.043,
-          "z": -0.108,
-          "w": -0.666
-        }
-      ],
-      "LeftHand": [
-        {
-          "x": 0.007,
-          "y": 0.151,
-          "z": 0.061
-        },
-        {
-          "x": -0.417,
-          "y": 0.631,
-          "z": -0.389,
-          "w": -0.525
-        }
-      ]
-    }}};
+  properties["userData"]={
+    "hifiHomeKey":{"reset":true},
+    "grabbableKey":{"grabbable":true},
+    "wearable":{
+      "joints": {
+        "RightHand": [
+          {
+            "x": 0.001,
+            "y": 0.139,
+            "z": 0.05
+          },
+          {
+            "x": -0.73,
+            "y": -0.043,
+            "z": -0.108,
+            "w": -0.666
+          }
+        ],
+        "LeftHand": [
+          {
+            "x": 0.007,
+            "y": 0.151,
+            "z": 0.061
+          },
+          {
+            "x": -0.417,
+            "y": 0.631,
+            "z": -0.389,
+            "w": -0.525
+          }
+        ]
+  }}};
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
   {
