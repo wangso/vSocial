@@ -24,31 +24,31 @@
   {
    var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", ]);
   properties["wearable"]={
-    "joints": {
-      "RightHand": [
+    joints: {
+      RightHand: [
         {
-          "x": 0.001,
-          "y": 0.139,
-          "z": 0.05
+          x: 0.001,
+          y: 0.139,
+          z: 0.05
         },
         {
-          "x": -0.73,
-          "y": -0.043,
-          "z": -0.108,
-          "w": -0.666
+          x: -0.73,
+          y: -0.043,
+          z: -0.108,
+          w: -0.666
         }
       ],
-      "LeftHand": [
+      LeftHand: [
         {
-          "x": 0.007,
-          "y": 0.151,
-          "z": 0.061
+          x: 0.007,
+          y: 0.151,
+          z: 0.061
         },
         {
-          "x": -0.417,
-          "y": 0.631,
-          "z": -0.389,
-          "w": -0.525
+          x: -0.417,
+          y: 0.631,
+          z: -0.389,
+          w: -0.525
         }
       ]
     }};
