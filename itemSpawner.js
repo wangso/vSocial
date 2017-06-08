@@ -23,7 +23,7 @@
    this.spawnItem = function () 
   {
    var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", "userData"]);
- };
+
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
   {
@@ -40,7 +40,7 @@
 }
 , gravity: properties.gravity, restitution: properties.restitution, lifetime: ITEM_LIFETIME, collisionsWillMove: 1, dynamic: 1, density: 100, collisionSoundURL: properties.collisionSoundURL, userData: properties.userData 
 }
-);
+)};
   
 
    this.startNearTrigger = function () 
