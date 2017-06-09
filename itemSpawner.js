@@ -25,7 +25,7 @@
 
   	var leftHandPosition = {
     "x": 0,//-0.0881,
-    "y": 0.0559,
+    "y": 0.0759,
     "z": 0.069
 	};
 	var leftHandRotation = Quat.fromPitchYawRollDegrees(90, -90, 0);
