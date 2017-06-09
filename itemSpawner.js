@@ -22,6 +22,16 @@
   }
    this.spawnItem = function () 
   {
+
+  	var leftHandPosition = {
+    "x": 0,//-0.0881,
+    "y": 0.0559,
+    "z": 0.0159
+	};
+	var leftHandRotation = Quat.fromPitchYawRollDegrees(90, -90, 0);
+	var rightHandPosition = Vec3.multiplyVbyV(leftHandPosition, { x: -1, y: 0, z: 0 });
+	var rightHandRotation = Quat.fromPitchYawRollDegrees(90, 90, 0);
+
    var properties = Entities.getEntityProperties(itemID, [ "type", "name", "modelURL", "shapeType", "parentID", "position", "rotation", "dimensions", "gravity", "restitution", "collisionSoundURL", ]);
   properties["userData"]=JSON.stringify({
     "hifiHomeKey":{
@@ -30,34 +40,16 @@
     "grabbableKey":{
       "grabbable": true
     },
-    "wearable":{
-      "joints": {
-        "RightHand": [
-          {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 0
-          }
-        ],
-        "LeftHand": [
-          {
-            "x": 0.007,
-            "y": 0.151,
-            "z": 0.061
-          },
-          {
-            "x": -0.417,
-            "y": 0.631,
-            "z": -0.389,
-            "w": -0.525
-          }
-        ]
+	    "wearable": {
+	        "joints": {
+	            "LeftHand": [
+	                leftHandPosition,
+	                leftHandRotation
+	            ],
+	            "RightHand": [
+	                rightHandPosition,
+	                rightHandRotation
+	            ]
   }}});
   var parent = Entities.getEntityProperties(properties.parentID, ["position", "rotation"]);
   var pos = 
