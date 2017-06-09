@@ -26,7 +26,7 @@
   	var leftHandPosition = {
     "x": 0,//-0.0881,
     "y": 0.0559,
-    "z": 0.259
+    "z": 0.109
 	};
 	var leftHandRotation = Quat.fromPitchYawRollDegrees(90, -90, 0);
 	var rightHandPosition = Vec3.multiplyVbyV(leftHandPosition, { x: -1, y: 0, z: 0 });
